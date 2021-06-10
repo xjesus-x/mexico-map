@@ -1,0 +1,58 @@
+.comentario {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
+  gap: 0.5rem 1rem;
+  text-align: end;
+}
+
+.salida {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  width: auto;
+  height: auto;
+  border: 1px solid #000;
+  color: black;
+  padding: 0.3rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+.color-div {
+  text-align: center;
+}
+
+.paleta {
+  display: flex;
+}
+
+.color-div {
+  margin: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+.menu input {
+  width: 70%;
+}
+
+@media (max-width: 1000px) {
+  .menu {
+    grid-template-columns: 2fr 1fr 2fr 1fr 2fr 1fr;
+  }
+}
+
+@media (max-width: 750px) {
+  .menu {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
